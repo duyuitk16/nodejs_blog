@@ -5,6 +5,8 @@ const handlebars = require('express-handlebars')
 const app = express() //trả về đối tượng để xây dựng website
 const port = 3000
 
+app.use(express.static(path.join(__dirname, 'public'))) //đối với file static, nó sẽ ăn theo public
+
 //HTTP LOGGER
 app.use(morgan('combined'))
 
