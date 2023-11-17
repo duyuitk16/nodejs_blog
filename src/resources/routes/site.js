@@ -3,7 +3,7 @@ const router = express.Router()
 const siteController = require('../app/controllers/SiteController')
 
 //Định nghĩa router con trong module news
-router.use('/search', siteController.search)
-router.use('/', siteController.index)
+router.get('/search', siteController.search)
+router.get('/', siteController.index)
 
 module.exports = router

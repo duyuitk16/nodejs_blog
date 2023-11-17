@@ -1,3 +1,4 @@
+const Course = require('./../models/Course')
 class NewsController {
   // GET /news
   index(req, res) {
